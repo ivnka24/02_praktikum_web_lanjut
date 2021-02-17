@@ -22,6 +22,6 @@ Route::get('/', function () {
 route::get('/about', function () {
     echo "NIM : 1941720182, NAMA : Ivanka Mauludi Juniar";
 });
-Route::get('/articles/1', function () {
-    echo "Halaman Artikel 1";
+Route::get('/articles/{id}', function ($id) {
+    echo "Halaman Artikel ".$id;
 });
